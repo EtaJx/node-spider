@@ -24,3 +24,6 @@ $ yarn start
 
 ## 参考
 更多请参考[官方文档](https://zh.nuxtjs.org/)
+
+## TODO
+- 路由的filter，比如接口不能直接访问，或者未登录的情况下，一些页面不能访问
