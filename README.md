@@ -6,22 +6,21 @@
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install*[see note below]
+$ yarn install # Or yarn install*[see note below]
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yanr dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
+# build for production
+$ yarn build
 
-# generate static project
-$ npm run generate
+# launch server
+$ yarn start
 ```
 
-*Note: Due to a bug in yarn's engine version detection code if you are
-using a prerelease version of Node (i.e. v7.6.0-rc.1) you will need to either:
-  1. Use `npm install`
-  2. Run `yarn` with a standard release of Node and then switch back
+## 文件说明
+- 项目结构请查看[官方文档](https://zh.nuxtjs.org/guide/directory-structure)
+- 接口文件在`controllers`文件下，添加文件，自动生成路由
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+## 参考
+更多请参考[官方文档](https://zh.nuxtjs.org/)
