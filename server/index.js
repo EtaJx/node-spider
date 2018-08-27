@@ -2,6 +2,7 @@ import Koa from 'koa'
 import AutoRouter from '../lib/autoRouter'
 import { Nuxt, Builder } from 'nuxt'
 import options from '../config'
+const filter = require('./filter')
 const start = async () => {
   const app = new Koa()
   const host = options.host
@@ -19,6 +20,7 @@ const start = async () => {
     const builder = new Builder(nuxt)
     await builder.build()
   }
+  app.use(filter()) // 路由过滤
   new AutoRouter(null, app).auto()
   app.use(ctx => {
     ctx.status = 200
