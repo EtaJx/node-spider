@@ -2,6 +2,7 @@ import Koa from 'koa'
 import AutoRouter from '../lib/autoRouter'
 import { Nuxt, Builder } from 'nuxt'
 import options from '../config'
+import bodyParser from 'koa-bodyparser'
 const filter = require('./filter')
 const start = async () => {
   const app = new Koa()
@@ -21,6 +22,7 @@ const start = async () => {
     await builder.build()
   }
   app.use(filter()) // 路由过滤
+  app.use(bodyParser())
   new AutoRouter(null, app).auto()
   app.use(ctx => {
     ctx.status = 200
@@ -30,7 +32,7 @@ const start = async () => {
   })
 
   app.listen(port, host)
-  console.log('Server listening on ' + host + ':' + port) // eslint-disable-line no-console
+  console.log('Server listening on http://' + host + ':' + port) // eslint-disable-line no-console
 }
 
 start()

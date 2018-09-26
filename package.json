@@ -23,6 +23,7 @@
   "devDependencies": {
     "babel-eslint": "^7.1.1",
     "backpack-core": "^0.3.0",
+    "cheerio": "^1.0.0-rc.2",
     "eslint": "^3.13.1",
     "eslint-config-standard": "^10.2.1",
     "eslint-loader": "^1.9.0",
@@ -31,8 +32,12 @@
     "eslint-plugin-node": "^4.2.2",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
+    "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
     "nodemon": "^1.11.0",
+    "request": "^2.88.0",
     "scmp": "^2.0.0"
   }
 }
