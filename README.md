@@ -27,4 +27,4 @@ $ yarn start
 
 ## TODO
 - [x] server路由的filter，比如接口不能直接访问，或者未登录的情况下，一些页面不能访问
-- [ ] page的filter，在middlware中实现
+- [x] page的filter，在middlware中实现
