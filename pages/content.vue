@@ -53,6 +53,7 @@ export default {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
   }
 
   code {
